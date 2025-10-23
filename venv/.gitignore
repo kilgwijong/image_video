@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+
+# Django
+*.log
+db.sqlite3
+
+# Virtual Environment
+venv/
+
+# Secret files (GitHub에 올리면 안 됨)
+.env
+gcp-credentials.json
+
+# OS generated files
+.DS_Store
+Thumbs.db
