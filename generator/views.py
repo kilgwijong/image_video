@@ -7,7 +7,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.conf import settings
-from dotenv import load_dotenv
+#from dotenv import load_dotenv 배포때 주석
 from PIL import Image
 from io import BytesIO
 import base64
@@ -17,7 +17,7 @@ import vertexai
 from vertexai.generative_models import GenerativeModel, Part
 
 # .env 파일에서 환경 변수 로드
-load_dotenv()
+#load_dotenv() 배포때 주석
 api_key = os.getenv("GOOGLE_API_KEY")
 
 if not api_key:
