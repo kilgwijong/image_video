@@ -1,3 +1,5 @@
+# 수정된 requirements.txt (Docker 배포용)
+
 annotated-types==0.7.0
 anyio==4.11.0
 asgiref==3.10.0
@@ -41,7 +43,7 @@ pydantic==2.12.3
 pydantic_core==2.41.4
 pyparsing==3.2.5
 python-dateutil==2.9.0.post0
-python-dotenv==1.1.1
+# python-dotenv==1.1.1  <- Docker와 충돌하므로 코드에서 load_dotenv()를 지우고, 이 라이브러리도 제거합니다.
 requests==2.32.5
 rsa==4.9.1
 shapely==2.1.2
@@ -56,3 +58,7 @@ tzdata==2025.2
 uritemplate==4.2.0
 urllib3==2.5.0
 websockets==15.0.1
+
+# --- Docker 배포에 필요한 라이브러리 추가 ---
+gunicorn
+whitenoise
