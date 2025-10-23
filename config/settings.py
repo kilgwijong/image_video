@@ -13,13 +13,13 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os
 # --- dotenv 로드를 위한 import 추가 ---
-#from dotenv import load_dotenv 배포때 주석
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # --- .env 파일 로드 (BASE_DIR 아래 .env 파일) ---
-#load_dotenv(os.path.join(BASE_DIR, '.env')) 배포때 주석
+
 
 
 # Quick-start development settings - unsuitable for production
